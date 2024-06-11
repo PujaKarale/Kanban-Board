@@ -5,11 +5,14 @@ import './App.css';
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <>
+    <div className="flex flex-col">
       <Header />
-      <div className="p-4 flex-wrap"> {/* //flex-grow */}
+    </div>
+    <div className="p-4 flex-wrap"> {/* //flex-grow */}
         <Board />
       </div>
-    </div>
+      </>
+    
   );
 }

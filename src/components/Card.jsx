@@ -5,12 +5,12 @@ export default function Card({ task, moveTask }) {
     moveTask(task.id, -1); // Move left
   };
   const handleRightClick = (e) => {
-    e.preventDefault();
+     e.preventDefault();
     moveTask(task.id, 1); // Move right
   };
   return (
     <div
-      className="bg-white shadow-md rounded p-4 mb-4 border-l-4 border-blue-500"
+      className="bg-white shadow-md rounded p-4 mb-4 border-l-4 border-blue-500  shadow-blue-200"
       onClick={handleLeftClick}
       onContextMenu={handleRightClick}
     >
